@@ -1,14 +1,8 @@
 # PNT Integrity Library
-The PNT Integrity Library provides users a method to verify the integrity of the received GPS data and ranging signals, thereby improving resiliency against potential GPS signal loss. The software is a scalable framework for GNSS-based PNT manipulation detection that offers varying levels of protection based on the available data. The library is to be provided to GNSS receiver and GNSS-based timing server OEMs for use in future development or integration into existing products and platforms. More information can be found under [PNT_Integrity_Library_Guide.pdf](https://github.com/cisagov/PNT-Integrity/blob/develop/PNT_Integrity_Library_Guide.pdf).
+The PNT Integrity Library provides users a method to verify the integrity of the received GPS data and ranging signals, thereby improving resiliency against potential GPS signal loss. The software is a scalable framework for GNSS-based PNT manipulation detection that offers varying levels of protection based on the available data. The library is to be provided to GNSS receiver and GNSS-based timing server OEMs for use in future development or integration into existing products and platforms. More details on the PNT Integrity Library can be found under the [PNT_Integrity_Library_Guide.pdf](https://github.com/cisagov/PNT-Integrity/blob/develop/PNT_Integrity_Library_Guide.pdf) and [PNT ReadMe on system components, algorithms, and checks](https://github.com/cisagov/PNT-Integrity/blob/develop/pnt_integrity/pnt_integrity/README.md).
 
 ## License
-GNU GENERAL PUBLIC LICENSE (GPL), Version 3, 29 June 2007
-
-Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>. Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
-                       
-To protect your rights, we need to prevent others from denying you these rights or asking you to surrender the rights.  Therefore, you have certain responsibilities if you distribute copies of the software, or if  you modify it: responsibilities to respect the freedom of others. For example, if you distribute copies of such a program, whether gratis or for a fee, you must pass on to the recipients the same freedoms that you received.  You must make sure that they, too, receive or can get the source code.  And you must show them these terms so they know their rights. See [GPL License](https://github.com/cisagov/PNT-Integrity/blob/develop/LICENSE) for more information.
-
-This library is licensed under the BSD 3-Clause License. The library contains source code developed by IS4S and third parties. Refer to the invidiual source files for applicable copyright information.
+This library is licensed under the BSD 3-Clause License. The library contains source code developed by IS4S and third parties. Refer to the invidual source files for applicable copyright information.
 ```
 Copyright (c) 2020 Integrated Solutions for Systems (IS4S), Inc
 Copyright (c) 2017, ETHZ ASL (geodetic converter)
@@ -23,11 +17,11 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 ## Build Instructions for the PNT Integrity Library
 
-This repository contains the top level CMake project for buidling the IS4S PNT Integrity Library, User Interface and their dependencies.
+This repository contains the top level CMake project for building the IS4S PNT Integrity Library, User Interface, and their dependencies.
 
 <b> System Requirements </b>
 
-The PNT Integrity Library is written in a cross-platform manner using C++. While it is expected to work on a wide variety of platforms it has been tested with on the following operating systems:
+The PNT Integrity Library is written in a cross-platform manner using C++. While it is expected to work on a wide variety of platforms, it has been tested with on the following operating systems:
 * Ubuntu Linux 16.04, 18.04 & 20.04
 * MacOS 10.15
 * Windows 10
@@ -40,7 +34,7 @@ The following additional tools are needed to build the library:
 
 The PNT Integrity Library is designed to require as few third party dependencies as possible to support building on a wide variety of platforms. Two dependencies are required in addition to the libraries provided in the package. The Eigen (https://eigen.tuxfamily.org) C++ template library for linear algebra is required by the base PNT Integrity library. The FFTW (http://fftw.org) package is optionally required and is needed to use the acquisition check. QT (https://www.qt.io) is required to build and run the user interface
 
-Both packages can be installed following instructions on their respective websites. Eigen is a header-only package and can be installed by downloading a release from the project web site and extracting to a local folder. FFTW binaries are avaiable for a range of platforms from the project web site.
+Both packages can be installed following instructions on their respective websites. Eigen is a header-only package and can be installed by downloading a release from the project web site and extracting to a local folder. FFTW binaries are available for a range of platforms from the project web site.
 
 Alternatively, a package manager can be used to install the dependencies. For MacOS the Homebrew (https://brew.sh) package manager is recommended. The Chocolatey (https://chocolatey.org) package manager is recommended for Windows. Instructions on installing the required and optional dependencies using package managers on the supported
 operating systems are provided in the following sections.
